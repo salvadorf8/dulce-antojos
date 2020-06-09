@@ -12,15 +12,15 @@ class App extends React.Component {
     state = {
         collapsed: false,
         images: [
-            { id: '1', description: null, src: require(`../assets/img/20200428_132720.jpg`), width: 3, height: 2 },
-            { id: '2', description: null, src: require(`../assets/img/20200429_160625.jpg`), width: 3, height: 4 },
-            { id: '3', description: null, src: require(`../assets/img/20200506_192118.jpg`), width: 3, height: 4 },
-            { id: '4', description: null, src: require(`../assets/img/20200523_111440.jpg`), width: 3, height: 2 },
-            { id: '5', description: null, src: require(`../assets/img/20200523_135756.jpg`), width: 3, height: 3 },
-            { id: '7', description: null, src: require(`../assets/img/20200530_150658.jpg`), width: 3, height: 2 },
-            { id: '9', description: null, src: require(`../assets/img/20200530_165941.jpg`), width: 3, height: 3 },
-            { id: '9', description: null, src: require(`../assets/img/20200520_143415.jpg`), width: 3, height: 4 },
-            { id: '9', description: null, src: require(`../assets/img/20200516_112358.jpg`), width: 3, height: 4 }
+            { id: '1', description: null, src: require(`../assets/img/web/20200428_132720.jpg`), width: 3, height: 2 },
+            { id: '2', description: null, src: require(`../assets/img/web/20200429_160625.jpg`), width: 3, height: 4 },
+            { id: '3', description: null, src: require(`../assets/img/web/20200506_192118.jpg`), width: 3, height: 4 },
+            { id: '4', description: null, src: require(`../assets/img/web/20200523_111440.jpg`), width: 3, height: 2 },
+            { id: '5', description: null, src: require(`../assets/img/web/20200523_135756.jpg`), width: 3, height: 3 },
+            { id: '7', description: null, src: require(`../assets/img/web/20200530_150658.jpg`), width: 3, height: 2 },
+            { id: '9', description: null, src: require(`../assets/img/web/20200530_165941.jpg`), width: 3, height: 3 },
+            { id: '9', description: null, src: require(`../assets/img/web/20200520_143415.jpg`), width: 3, height: 4 },
+            { id: '9', description: null, src: require(`../assets/img/web/20200516_112358.jpg`), width: 3, height: 4 }
         ]
     };
 

@@ -79,7 +79,7 @@ class App extends React.Component {
 
                                 <MDBCol md='6' xl='5' className='mt-xl-5'>
                                     <MDBAnimation type='fadeInRight' delay='.5s'>
-                                        <img src={require(`../assets/img/20200531_150509.png`)} alt='' className='img-fluid' />
+                                        <img src='https://res.cloudinary.com/dtxzobw6b/image/upload/c_scale,w_600/v1591750298/dulce_antojos/20200531_150509_uvbyph.png' alt='' className='img-fluid' />
                                     </MDBAnimation>
                                 </MDBCol>
                             </MDBRow>

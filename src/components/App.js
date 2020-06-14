@@ -27,51 +27,46 @@ class App extends React.Component {
     };
 
     handleTogglerClick = () => {
-        this.setState({
-            collapsed: !this.state.collapsed
-        });
+        console.log('hello', this.state.collapsed);
+        this.setState({ collapsed: !this.state.collapsed });
+        console.log('hello', this.state.collapsed);
     };
 
     render() {
-        const overlay = <div id='sidenav-overlay' style={{ backgroundColor: 'transparent' }} onClick={this.handleTogglerClick} />;
+        // const overlay = <div id='sidenav-overlay' style={{ backgroundColor: '#eeb5f3' }} onClick={this.handleTogglerClick} />;
         return (
             <div id='apppage'>
                 <Router>
-                    <div>
-                        <MDBNavbar dark expand='md' fixed='top' scrolling transparent>
-                            <MDBContainer>
-                                <MDBNavbarBrand>
-                                    <img src='https://res.cloudinary.com/dtxzobw6b/image/upload/c_scale,w_290/v1592120559/dulce_antojos/cake_logo_name_qddflk.png' alt='' className='img-fluid ' />
-                                </MDBNavbarBrand>
-                                <MDBNavbarToggler onClick={this.handleTogglerClick} />
-                                <MDBCollapse isOpen={this.state.collapsed} navbar className='d-none d-md-block'>
-                                    <MDBNavbarNav right>
-                                        <MDBNavItem>
-                                            <MDBLink>
-                                                <MDBIcon fab icon='facebook' size='2x' className='icon ' />
-                                            </MDBLink>
-                                        </MDBNavItem>
-                                        <MDBNavItem>
-                                            <MDBLink>
-                                                <MDBIcon fab icon='instagram' size='2x' className='icon' />
-                                            </MDBLink>
-                                        </MDBNavItem>
-                                        <MDBNavItem>
-                                            <MDBLink className='text-center'>
-                                                {/* <MDBBtn outline color='slategrey'> */}
-                                                <span>
-                                                    <MDBIcon icon='headset' size='2x' className='pr-2 icon '></MDBIcon>
-                                                    <h7 className=' black-text px-2 center'>817 691 8221 </h7>
-                                                </span>
-                                                {/* </MDBBtn> */}
-                                            </MDBLink>
-                                        </MDBNavItem>
-                                    </MDBNavbarNav>
-                                </MDBCollapse>
-                            </MDBContainer>
-                        </MDBNavbar>
-                        {this.state.collapsed && overlay}
-                    </div>
+                    <MDBNavbar dark expand='md' fixed='top' scrolling transparent className='header'>
+                        <MDBContainer>
+                            <MDBNavbarBrand>
+                                <img src='https://res.cloudinary.com/dtxzobw6b/image/upload/c_scale,w_290/v1592120559/dulce_antojos/cake_logo_name_qddflk.png' alt='' className='img-fluid ' />
+                            </MDBNavbarBrand>
+                            <MDBNavbarToggler onClick={this.handleTogglerClick} />
+                            <MDBCollapse isOpen={this.state.collapsed} navbar>
+                                <MDBNavbarNav right>
+                                    <MDBNavItem>
+                                        <a href='https://www.facebook.com/dulceantojosdfw'>
+                                            <MDBIcon fab icon='facebook' size='2x' className='icon ' />
+                                        </a>
+                                    </MDBNavItem>
+                                    <MDBNavItem>
+                                        <a href='https://www.instagram.com/dulceantojosdfw/'>
+                                            <MDBIcon fab icon='instagram' size='2x' className='icon' />
+                                        </a>
+                                    </MDBNavItem>
+                                    <MDBNavItem>
+                                        <a href='tel: 817-691-8221'>
+                                            <MDBIcon icon='headset' size='2x' className='pr-2 icon '>
+                                                <span className='px-2 center icon-text'>817 691 8221 </span>
+                                            </MDBIcon>
+                                        </a>
+                                    </MDBNavItem>
+                                </MDBNavbarNav>
+                            </MDBCollapse>
+                        </MDBContainer>
+                    </MDBNavbar>
+                    {/* {this.state.collapsed && overlay} */}
 
                     <MDBView>
                         <MDBMask className='d-flex justify-content-center align-items-center gradient'>
@@ -93,15 +88,13 @@ class App extends React.Component {
                             </MDBContainer>
                         </MDBMask>
                     </MDBView>
-
-                    <section fluid className='gallery'>
+                    <MDBContainer className='gallery' fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
                         <MDBRow>
                             <MDBCol>
-                                <Gallery photos={this.state.images} onClick={this.openLightbox} fluid />
+                                <Gallery photos={this.state.images} onClick={this.openLightbox} />
                             </MDBCol>
                         </MDBRow>
-                    </section>
-
+                    </MDBContainer>
                     <Footer />
                 </Router>
             </div>

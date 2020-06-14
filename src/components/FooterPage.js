@@ -1,40 +1,32 @@
+import './mainview.css';
 import React from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 
 const FooterPage = () => {
     return (
-        <MDBContainer fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
-            <MDBFooter className='font-small pt-4 ' style={{ backgroundColor: '#cfbea7' }}>
-                <MDBContainer fluid className='text-center text-md-left'>
-                    <MDBRow>
-                        <MDBCol md='6'>
-                            <h5 className='title'>Footer Content</h5>
-                            <p>Call and order your fresh homecooked cake. something, something, more something more text... this and that and more, need more information to fill in this area or I can remove it</p>
-                        </MDBCol>
-                        <MDBCol md='6'>
-                            <h5 className='title'>Links</h5>
-                            <ul>
-                                <li className='list-unstyled'>
-                                    <a href='#!'>Link 1</a>
-                                </li>
-                                <li className='list-unstyled'>
-                                    <a href='#!'>Link 2</a>
-                                </li>
-                                <li className='list-unstyled'>
-                                    <a href='#!'>Link 3</a>
-                                </li>
-                                <li className='list-unstyled'>
-                                    <a href='#!'>Link 4</a>
-                                </li>
-                            </ul>
-                        </MDBCol>
-                    </MDBRow>
-                </MDBContainer>
-                <div className='footer-copyright text-center py-3'>
+        <MDBFooter className='font-small  black-text footer'>
+            <MDBContainer fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
+                <MDBRow>
+                    <MDBCol md='7 action-left'>
+                        <img src='https://res.cloudinary.com/dtxzobw6b/image/upload/c_scale,w_693/v1592108700/dulce_antojos/cake_logo_0613_fc5to9.png' alt='' className='img-fluid ' />
+                    </MDBCol>
+                    <MDBCol md='5'>
+                        <MDBRow className='py-5 action-right'>
+                            <MDBCol>Facebook</MDBCol>
+                        </MDBRow>
+                        <MDBRow className='py-5 action-right'>
+                            <MDBCol>Instagram</MDBCol>
+                        </MDBRow>
+                        <MDBRow className='py-5 action-right'>
+                            <MDBCol>Phone</MDBCol>
+                        </MDBRow>
+                    </MDBCol>
+                </MDBRow>
+                <div className='footer-copyright text-center py-3 black-text pt-4'>
                     <MDBContainer fluid>&copy; {new Date().getFullYear()} Copyright: designed by: LazySal</MDBContainer>
                 </div>
-            </MDBFooter>
-        </MDBContainer>
+            </MDBContainer>
+        </MDBFooter>
     );
 };
 

@@ -82,6 +82,10 @@ body {
         transform: translateX(-50%);
         left: 50%;
     }
+    .view {
+        min-height: 30vh !important;
+        padding-top: 30em;
+    }
 }
 
 @media (max-width: 767px) and (orientation: landscape) {

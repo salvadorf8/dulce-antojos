@@ -30,7 +30,7 @@ body {
     background-color: #fff5ee;
 }
 
-#apppage .gallery {
+.gallery {
     background-color: #f7e9f8;
     padding-top: 8em;
     padding-bottom: 8em;
@@ -43,7 +43,7 @@ body {
 }
 
 .icon:hover {
-    color: #e975f3;
+    color: #ea41fa;
 }
 
 .icon-text {
@@ -70,7 +70,7 @@ body {
 
 @media only screen and (max-width: 400px) {
     #apppage .animated img {
-        max-height: 50vh;
+        max-height: 35vh;
         transform: translateX(-50%);
         left: 50%;
         position: absolute;
@@ -86,7 +86,7 @@ body {
 
 @media (max-width: 767px) and (orientation: landscape) {
     #apppage .animated img {
-        max-height: 50vh;
+        max-height: 40vh;
         transform: translateX(-50%);
         left: 50%;
         position: relative;

@@ -1,11 +1,11 @@
 import './NavigationBar.css';
 import React, { Component } from 'react';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBIcon, MDBContainer } from 'mdbreact';
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBCollapse, MDBNavItem, MDBIcon, MDBContainer } from 'mdbreact';
 
 class NavigationBar extends Component {
     render() {
         return (
-            <MDBNavbar dark expand='md' fixed='top' scrolling transparent className='header'>
+            <MDBNavbar className='header' color='brown lighten-4' dark expand='md' fixed='top' scrolling transparent>
                 <MDBContainer>
                     <MDBNavbarBrand>
                         <img src='https://res.cloudinary.com/dtxzobw6b/image/upload/c_scale,w_209/v1592120559/dulce_antojos/cake_logo_name_qddflk.png' alt='' className='img-fluid' />
@@ -38,3 +38,4 @@ class NavigationBar extends Component {
 }
 
 export default NavigationBar;
+// color='rgba(218, 62, 62, 0.2)'

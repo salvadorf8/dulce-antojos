@@ -2,7 +2,7 @@ import './mainview.css';
 
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { MDBMask, MDBRow, MDBCol, MDBView, MDBContainer, MDBAnimation } from 'mdbreact';
+import { MDBMask, MDBRow, MDBCol, MDBView, MDBContainer, MDBAnimation, MDBIcon } from 'mdbreact';
 import Gallery from 'react-photo-gallery';
 import Navigationbar from './NavigationBar';
 
@@ -49,7 +49,7 @@ class App extends React.Component {
                         </MDBContainer>
                     </MDBMask>
                 </MDBView>
-                <MDBContainer className='gallery' fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
+                <MDBContainer className='gallery' fluid>
                     <MDBRow>
                         <MDBCol>
                             <Gallery photos={this.state.images} onClick={this.openLightbox} />

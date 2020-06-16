@@ -23,6 +23,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    margin-bottom: -7em;
     min-height: 70vh;
 }
 
@@ -37,13 +38,13 @@ body {
 }
 
 .icon {
-    color: #eeb5f3;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    color: #ea65f7;
+    padding-left: 0.35em;
+    padding-right: 0.35em;
 }
 
 .icon:hover {
-    color: #ea41fa;
+    color: #e31ef5;
 }
 
 .icon-text {

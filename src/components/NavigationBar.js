@@ -38,4 +38,3 @@ class NavigationBar extends Component {
 }
 
 export default NavigationBar;
-// color='rgba(218, 62, 62, 0.2)'

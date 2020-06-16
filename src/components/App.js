@@ -1,15 +1,11 @@
 import './mainview.css';
 
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { MDBMask, MDBRow, MDBCol, MDBView, MDBContainer, MDBAnimation, MDBIcon } from 'mdbreact';
+import { MDBMask, MDBRow, MDBCol, MDBView, MDBContainer, MDBAnimation } from 'mdbreact';
+
 import Gallery from 'react-photo-gallery';
 import Navigationbar from './NavigationBar';
-
-// import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
 import Footer from './FooterPage';
-import Navbar from './NavigationBar';
 
 class App extends React.Component {
     state = {

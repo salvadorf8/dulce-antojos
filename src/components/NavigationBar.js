@@ -1,4 +1,3 @@
-import './NavigationBar.css';
 import React, { Component } from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBCollapse, MDBNavItem, MDBIcon, MDBContainer } from 'mdbreact';
 

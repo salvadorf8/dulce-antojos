@@ -29,7 +29,7 @@ const FooterPage = () => {
                             <MDBCol>
                                 <a href='tel: 817-691-8211'>
                                     <MDBIcon icon='headset' size='2x' className='pr-2 icon '>
-                                        <span className='px-2 center icon-text'>click to call </span>
+                                        <span className='px-2 center icon-text'>click here to call me</span>
                                     </MDBIcon>
                                 </a>
                             </MDBCol>

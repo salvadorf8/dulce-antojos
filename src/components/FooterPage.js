@@ -28,7 +28,7 @@ const FooterPage = () => {
                         </MDBRow>
                         <MDBRow className='py-5 action-right'>
                             <MDBCol>
-                                <a href='tel: 817-691-8221'>
+                                <a href='tel: 817-691-8211'>
                                     <MDBIcon icon='headset' size='2x' className='pr-2 icon '>
                                         <span className='px-2 center icon-text'>click to call </span>
                                     </MDBIcon>
@@ -42,7 +42,7 @@ const FooterPage = () => {
                 </MDBRow>
             </MDBContainer>
             <div className='footer-copyright text-center py-3 black-text pt-4'>
-                <MDBContainer fluid>&copy; {new Date().getFullYear()} Copyright: designed by: LazySal</MDBContainer>
+                <MDBContainer fluid>&copy; { new Date().getFullYear() } Copyright: designed by: LazySal</MDBContainer>
             </div>
         </MDBFooter>
     );

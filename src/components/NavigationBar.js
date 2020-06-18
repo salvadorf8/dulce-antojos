@@ -23,9 +23,9 @@ class NavigationBar extends Component {
                                 </a>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <a href='tel: 817-691-8221'>
+                                <a href='tel: 817-691-8211'>
                                     <MDBIcon icon='headset' size='2x' className='pr-2 icon '>
-                                        <span className='px-2 center icon-text'>817 691 8221 </span>
+                                        <span className='px-2 center icon-text'>817 691 8211 </span>
                                     </MDBIcon>
                                 </a>
                             </MDBNavItem>

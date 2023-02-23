@@ -32,6 +32,16 @@
     padding-right: 0.35em;
 }
 
+.icon2 {
+    color: #333429;
+    padding-left: 0.35em;
+    padding-right: 0.35em;
+}
+
+h2 {
+    color: rgba(14, 14, 14, 0.8);
+}
+
 .icon:hover {
     color: #e31ef5;
 }
@@ -55,8 +65,7 @@
 }
 
 strong {
-    font-family: 'Mr De Haviland', cursive;
-    font-size: 50px;
+    font-size: 26px;
 }
 
 h6 {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBIcon } from 'mdbreact';
 
 const FooterPage = () => {
@@ -36,7 +35,7 @@ const FooterPage = () => {
                         </MDBRow>
                     </MDBCol>
                     <MDBCol md='7 ' className='action-left'>
-                        <img src='https://res.cloudinary.com/dtxzobw6b/image/upload/c_scale,w_693/v1592108700/dulce_antojos/cake_logo_0613_fc5to9.png' alt='' className='img-fluid ' />
+                        <img src='https://res.cloudinary.com/dtxzobw6b/image/upload/v1677124072/dulce_antojos/logo_wnuqf9.png' alt='' className='img-fluid ' />
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
@@ -48,5 +47,3 @@ const FooterPage = () => {
 };
 
 export default FooterPage;
-
-// style={{ paddingLeft: 0, paddingRight: 0 }}

@@ -1,11 +1,11 @@
 const NewTrial = () => {
     return (
         <div>
-            <svg id='svg-background' class='position-absolute' viewBox='0 0 1920 880'>
+            <svg id='svg-background' className='position-absolute' viewBox='0 0 1920 880'>
                 <g>
                     <linearGradient id='svg-gradient' x1='0' x2='1' y1='0' y2='0'>
-                        <stop stop-color='hsl(298.1366459627329, 69.09871244635193%, 54.31372549019608%)' offset='0'></stop>
-                        <stop stop-color='hsl(289.1803278688525, 79.22077922077926%, 84.90196078431373%)' offset='1'></stop>
+                        <stop stopColor='hsl(298.1366459627329, 69.09871244635193%, 54.31372549019608%)' offset='0'></stop>
+                        <stop stopColor='hsl(289.1803278688525, 79.22077922077926%, 84.90196078431373%)' offset='1'></stop>
                     </linearGradient>
                     <path d='' fill='url(#svg-gradient)' opacity='0.4'>
                         <animate

@@ -1,5 +1,6 @@
 import { MDBMask, MDBRow, MDBCol, MDBIcon, MDBContainer, MDBAnimation } from 'mdbreact';
 import VanillaTilt from 'vanilla-tilt';
+import { PhotoAlbum } from 'react-photo-album';
 
 import './ImageList.css';
 
@@ -23,22 +24,16 @@ const Content = () => {
         { id: '8', description: null, src: require(`../assets/img/web/20200530_165941.jpg`), width: 3, height: 3 },
         { id: '9', description: null, src: require(`../assets/img/web/20200520_143415.jpg`), width: 3, height: 4 },
         { id: '10', description: null, src: require(`../assets/img/web/20200516_112358.jpg`), width: 3, height: 4 },
-        { id: '11', description: null, src: require(`../assets/img/web/20200428_132720.jpg`), width: 4, height: 3 }
+        { id: '11', description: null, src: require(`../assets/img/web/20200428_132720.jpg`), width: 4, height: 3 },
+        { id: '12', description: null, src: require(`../assets/img/web/bday1.jpg`), width: 3, height: 4 },
+        { id: '13', description: null, src: require(`../assets/img/web/bday2.jpg`), width: 3, height: 3 },
+        { id: '14', description: null, src: require(`../assets/img/web/bday3.jpg`), width: 3, height: 3 },
+        { id: '15', description: null, src: require(`../assets/img/web/bday4.jpg`), width: 3, height: 3 },
+        { id: '16', description: null, src: require(`../assets/img/web/bday5.jpg`), width: 3, height: 3 },
+        { id: '17', description: null, src: require(`../assets/img/web/haulk.jpg`), width: 3, height: 4 },
+        { id: '18', description: null, src: require(`../assets/img/web/vintage.jpg`), width: 3, height: 4 },
+        { id: '19', description: null, src: require(`../assets/img/web/wedding.jpg`), width: 4, height: 4 }
     ];
-
-    const ImageList = ({ images }) => {
-        const renderedImages = images.map((image) => {
-            return (
-                <div key={image.id}>
-                    <div>
-                        <img src={image.src} alt={image.description} />
-                    </div>
-                </div>
-            );
-        });
-
-        return <div className='image-list'>{renderedImages}</div>;
-    };
 
     return (
         <div>
@@ -81,7 +76,7 @@ const Content = () => {
             <MDBContainer className='gallery' fluid>
                 <MDBRow>
                     <MDBCol>
-                        <ImageList images={images} />
+                        <PhotoAlbum layout='rows' photos={images} />
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
